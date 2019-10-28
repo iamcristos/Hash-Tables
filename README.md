@@ -14,6 +14,7 @@ In this diagram, you can see the key (a string) is run through a hash function w
 
 Hash functions map data of an arbitrary size to data of a fixed size. For example, a size-16 hash function might hash string-typed keys like so:
 
+
 `"foo"` -> `10`
 
 `"bar"` -> `12`
