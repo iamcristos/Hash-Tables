@@ -75,7 +75,7 @@ class HashTable:
 
         Fill this in.
         '''
-        hash_key = self._hash_mod()
+        hash_key = self._hash_mod(key)
         key_exist = False
         store = self.storage[hash_key]
         print(store,'<<<>>>>>')
@@ -115,7 +115,13 @@ class HashTable:
 
         Fill this in.
         '''
-        pass
+        new_capacity = self.capacity * 2
+        new_storage = [None] * new_capacity
+        for i in range(0, len(self.storage)):
+            if self.storage[i]:
+                new_storage[i] = self.storage[i]
+        self.storage = new_storage
+        
 
 
 
